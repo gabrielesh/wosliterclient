@@ -8,7 +8,7 @@
 
 #' @docType class
 #' @title Search operations
-#' @description woslite_r_client.Search
+#' @description wosliterclient.Search
 #' @format An \code{R6Class} generator object
 #' @field apiClient Handles the client-server communication.
 #'
