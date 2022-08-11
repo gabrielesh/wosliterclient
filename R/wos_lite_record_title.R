@@ -44,7 +44,7 @@ WosLiteRecordTitle <- R6::R6Class(
     fromJSON = function(WosLiteRecordTitleJson) {
       WosLiteRecordTitleObject <- jsonlite::fromJSON(WosLiteRecordTitleJson)
       if (!is.null(WosLiteRecordTitleObject$`Title`)) {
-        self$`Title` <- ApiClient$new()$deserializeObj(WosLiteRecordTitleObject$`Title`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Title` <- ApiClient$new()$deserializeObj(WosLiteRecordTitleObject$`Title`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -63,7 +63,7 @@ WosLiteRecordTitle <- R6::R6Class(
     },
     fromJSONString = function(WosLiteRecordTitleJson) {
       WosLiteRecordTitleObject <- jsonlite::fromJSON(WosLiteRecordTitleJson)
-      self$`Title` <- ApiClient$new()$deserializeObj(WosLiteRecordTitleObject$`Title`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Title` <- ApiClient$new()$deserializeObj(WosLiteRecordTitleObject$`Title`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
