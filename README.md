@@ -45,30 +45,30 @@ install.packages("base64enc")
 ### Build the package
 
 ```sh
-git clone https://github.com/Clarivate-SAR/woslite_r_client
+git clone https://github.com/gabrielesh/wosliterclient
 cd GIT_REPO_ID
 R CMD build .
-R CMD check woslite_r_client_1.0.0.tar.gz --no-manual
-R CMD INSTALL woslite_r_client_1.0.0.tar.gz
+R CMD check wosliterclient_1.0.0.tar.gz --no-manual
+R CMD INSTALL wosliterclient_1.0.0.tar.gz
 ```
 
 ### Install the package
 
 ```R
-install.packages("woslite_r_client")
+install.packages("wosliterclient")
 ```
 
 To install directly from Github, use `devtools`:
 ```R
 install.packages("devtools")
 library(devtools)
-install_github("Clarivate-SAR/woslite_r_client")
+install_github("gabrielesh/wosliterclient")
 ```
 
 ### Usage
 
 ```R
-library(woslite_r_client)
+library(wosliterclient)
 ```
 
 ## Documentation for API Endpoints
