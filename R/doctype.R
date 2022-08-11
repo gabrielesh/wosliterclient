@@ -44,7 +44,7 @@ Doctype <- R6::R6Class(
     fromJSON = function(DoctypeJson) {
       DoctypeObject <- jsonlite::fromJSON(DoctypeJson)
       if (!is.null(DoctypeObject$`Doctype`)) {
-        self$`Doctype` <- ApiClient$new()$deserializeObj(DoctypeObject$`Doctype`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Doctype` <- ApiClient$new()$deserializeObj(DoctypeObject$`Doctype`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -63,7 +63,7 @@ Doctype <- R6::R6Class(
     },
     fromJSONString = function(DoctypeJson) {
       DoctypeObject <- jsonlite::fromJSON(DoctypeJson)
-      self$`Doctype` <- ApiClient$new()$deserializeObj(DoctypeObject$`Doctype`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Doctype` <- ApiClient$new()$deserializeObj(DoctypeObject$`Doctype`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
