@@ -44,7 +44,7 @@ Keyword <- R6::R6Class(
     fromJSON = function(KeywordJson) {
       KeywordObject <- jsonlite::fromJSON(KeywordJson)
       if (!is.null(KeywordObject$`Keywords`)) {
-        self$`Keywords` <- ApiClient$new()$deserializeObj(KeywordObject$`Keywords`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Keywords` <- ApiClient$new()$deserializeObj(KeywordObject$`Keywords`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -63,7 +63,7 @@ Keyword <- R6::R6Class(
     },
     fromJSONString = function(KeywordJson) {
       KeywordObject <- jsonlite::fromJSON(KeywordJson)
-      self$`Keywords` <- ApiClient$new()$deserializeObj(KeywordObject$`Keywords`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Keywords` <- ApiClient$new()$deserializeObj(KeywordObject$`Keywords`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
