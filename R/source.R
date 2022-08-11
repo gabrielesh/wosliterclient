@@ -128,28 +128,28 @@ Source <- R6::R6Class(
     fromJSON = function(SourceJson) {
       SourceObject <- jsonlite::fromJSON(SourceJson)
       if (!is.null(SourceObject$`Pages`)) {
-        self$`Pages` <- ApiClient$new()$deserializeObj(SourceObject$`Pages`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Pages` <- ApiClient$new()$deserializeObj(SourceObject$`Pages`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`SourceTitle`)) {
-        self$`SourceTitle` <- ApiClient$new()$deserializeObj(SourceObject$`SourceTitle`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`SourceTitle` <- ApiClient$new()$deserializeObj(SourceObject$`SourceTitle`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`Issue`)) {
-        self$`Issue` <- ApiClient$new()$deserializeObj(SourceObject$`Issue`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Issue` <- ApiClient$new()$deserializeObj(SourceObject$`Issue`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`Volume`)) {
-        self$`Volume` <- ApiClient$new()$deserializeObj(SourceObject$`Volume`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Volume` <- ApiClient$new()$deserializeObj(SourceObject$`Volume`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`SpecialIssue`)) {
-        self$`SpecialIssue` <- ApiClient$new()$deserializeObj(SourceObject$`SpecialIssue`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`SpecialIssue` <- ApiClient$new()$deserializeObj(SourceObject$`SpecialIssue`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`BookSeriesTitle`)) {
-        self$`BookSeriesTitle` <- ApiClient$new()$deserializeObj(SourceObject$`BookSeriesTitle`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`BookSeriesTitle` <- ApiClient$new()$deserializeObj(SourceObject$`BookSeriesTitle`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`Published.BiblioDate`)) {
-        self$`Published.BiblioDate` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioDate`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Published.BiblioDate` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioDate`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(SourceObject$`Published.BiblioYear`)) {
-        self$`Published.BiblioYear` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioYear`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Published.BiblioYear` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioYear`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -217,14 +217,14 @@ Source <- R6::R6Class(
     },
     fromJSONString = function(SourceJson) {
       SourceObject <- jsonlite::fromJSON(SourceJson)
-      self$`Pages` <- ApiClient$new()$deserializeObj(SourceObject$`Pages`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`SourceTitle` <- ApiClient$new()$deserializeObj(SourceObject$`SourceTitle`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Issue` <- ApiClient$new()$deserializeObj(SourceObject$`Issue`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Volume` <- ApiClient$new()$deserializeObj(SourceObject$`Volume`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`SpecialIssue` <- ApiClient$new()$deserializeObj(SourceObject$`SpecialIssue`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`BookSeriesTitle` <- ApiClient$new()$deserializeObj(SourceObject$`BookSeriesTitle`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Published.BiblioDate` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioDate`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Published.BiblioYear` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioYear`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Pages` <- ApiClient$new()$deserializeObj(SourceObject$`Pages`, "array[character]", loadNamespace("wosliterclient"))
+      self$`SourceTitle` <- ApiClient$new()$deserializeObj(SourceObject$`SourceTitle`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Issue` <- ApiClient$new()$deserializeObj(SourceObject$`Issue`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Volume` <- ApiClient$new()$deserializeObj(SourceObject$`Volume`, "array[character]", loadNamespace("wosliterclient"))
+      self$`SpecialIssue` <- ApiClient$new()$deserializeObj(SourceObject$`SpecialIssue`, "array[character]", loadNamespace("wosliterclient"))
+      self$`BookSeriesTitle` <- ApiClient$new()$deserializeObj(SourceObject$`BookSeriesTitle`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Published.BiblioDate` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioDate`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Published.BiblioYear` <- ApiClient$new()$deserializeObj(SourceObject$`Published.BiblioYear`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
