@@ -60,7 +60,7 @@ WosLiteResponse <- R6::R6Class(
         self$`QueryResult` <- QueryResultObject
       }
       if (!is.null(WosLiteResponseObject$`Data`)) {
-        self$`Data` <- ApiClient$new()$deserializeObj(WosLiteResponseObject$`Data`, "array[WosLiteRecord]", loadNamespace("woslite_r_client"))
+        self$`Data` <- ApiClient$new()$deserializeObj(WosLiteResponseObject$`Data`, "array[WosLiteRecord]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -87,7 +87,7 @@ WosLiteResponse <- R6::R6Class(
     fromJSONString = function(WosLiteResponseJson) {
       WosLiteResponseObject <- jsonlite::fromJSON(WosLiteResponseJson)
       self$`QueryResult` <- QueryResult$new()$fromJSON(jsonlite::toJSON(WosLiteResponseObject$QueryResult, auto_unbox = TRUE, digits = NA))
-      self$`Data` <- ApiClient$new()$deserializeObj(WosLiteResponseObject$`Data`, "array[WosLiteRecord]", loadNamespace("woslite_r_client"))
+      self$`Data` <- ApiClient$new()$deserializeObj(WosLiteResponseObject$`Data`, "array[WosLiteRecord]", loadNamespace("wosliterclient"))
       self
     }
   )
