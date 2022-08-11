@@ -200,7 +200,7 @@ SearchApi <- R6::R6Class(
 
       if (httr::status_code(resp) >= 200 && httr::status_code(resp) <= 299) {
         deserializedRespObj <- tryCatch(
-          self$apiClient$deserialize(resp, "WosLiteResponse", loadNamespace("woslite_r_client")),
+          self$apiClient$deserialize(resp, "WosLiteResponse", loadNamespace("wosliterclient")),
           error = function(e){
              stop("Failed to deserialize response")
           }
@@ -283,7 +283,7 @@ SearchApi <- R6::R6Class(
 
       if (httr::status_code(resp) >= 200 && httr::status_code(resp) <= 299) {
         deserializedRespObj <- tryCatch(
-          self$apiClient$deserialize(resp, "WosLiteResponse", loadNamespace("woslite_r_client")),
+          self$apiClient$deserialize(resp, "WosLiteResponse", loadNamespace("wosliterclient")),
           error = function(e){
              stop("Failed to deserialize response")
           }
