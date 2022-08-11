@@ -68,13 +68,13 @@ Author <- R6::R6Class(
     fromJSON = function(AuthorJson) {
       AuthorObject <- jsonlite::fromJSON(AuthorJson)
       if (!is.null(AuthorObject$`Authors`)) {
-        self$`Authors` <- ApiClient$new()$deserializeObj(AuthorObject$`Authors`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Authors` <- ApiClient$new()$deserializeObj(AuthorObject$`Authors`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(AuthorObject$`BookAuthors`)) {
-        self$`BookAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookAuthors`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`BookAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookAuthors`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(AuthorObject$`BookGroupAuthors`)) {
-        self$`BookGroupAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookGroupAuthors`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`BookGroupAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookGroupAuthors`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -107,9 +107,9 @@ Author <- R6::R6Class(
     },
     fromJSONString = function(AuthorJson) {
       AuthorObject <- jsonlite::fromJSON(AuthorJson)
-      self$`Authors` <- ApiClient$new()$deserializeObj(AuthorObject$`Authors`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`BookAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookAuthors`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`BookGroupAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookGroupAuthors`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Authors` <- ApiClient$new()$deserializeObj(AuthorObject$`Authors`, "array[character]", loadNamespace("wosliterclient"))
+      self$`BookAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookAuthors`, "array[character]", loadNamespace("wosliterclient"))
+      self$`BookGroupAuthors` <- ApiClient$new()$deserializeObj(AuthorObject$`BookGroupAuthors`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
