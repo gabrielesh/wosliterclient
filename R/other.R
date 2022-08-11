@@ -152,34 +152,34 @@ Other <- R6::R6Class(
     fromJSON = function(OtherJson) {
       OtherObject <- jsonlite::fromJSON(OtherJson)
       if (!is.null(OtherObject$`Identifier.Eissn`)) {
-        self$`Identifier.Eissn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Eissn`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Eissn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Eissn`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Contributor.ResearcherID.ResearcherIDs`)) {
-        self$`Contributor.ResearcherID.ResearcherIDs` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.ResearcherIDs`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Contributor.ResearcherID.ResearcherIDs` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.ResearcherIDs`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Contributor.ResearcherID.Names`)) {
-        self$`Contributor.ResearcherID.Names` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.Names`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Contributor.ResearcherID.Names` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.Names`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.Doi`)) {
-        self$`Identifier.Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Doi`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Doi`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.Issn`)) {
-        self$`Identifier.Issn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Issn`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Issn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Issn`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.article_no`)) {
-        self$`Identifier.article_no` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.article_no`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.article_no` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.article_no`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.Isbn`)) {
-        self$`Identifier.Isbn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Isbn`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Isbn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Isbn`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`ResearcherID.Disclaimer`)) {
-        self$`ResearcherID.Disclaimer` <- ApiClient$new()$deserializeObj(OtherObject$`ResearcherID.Disclaimer`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`ResearcherID.Disclaimer` <- ApiClient$new()$deserializeObj(OtherObject$`ResearcherID.Disclaimer`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.Xref_Doi`)) {
-        self$`Identifier.Xref_Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Xref_Doi`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Xref_Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Xref_Doi`, "array[character]", loadNamespace("wosliterclient"))
       }
       if (!is.null(OtherObject$`Identifier.Ids`)) {
-        self$`Identifier.Ids` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Ids`, "array[character]", loadNamespace("woslite_r_client"))
+        self$`Identifier.Ids` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Ids`, "array[character]", loadNamespace("wosliterclient"))
       }
       self
     },
@@ -261,16 +261,16 @@ Other <- R6::R6Class(
     },
     fromJSONString = function(OtherJson) {
       OtherObject <- jsonlite::fromJSON(OtherJson)
-      self$`Identifier.Eissn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Eissn`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Contributor.ResearcherID.ResearcherIDs` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.ResearcherIDs`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Contributor.ResearcherID.Names` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.Names`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Doi`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.Issn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Issn`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.article_no` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.article_no`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.Isbn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Isbn`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`ResearcherID.Disclaimer` <- ApiClient$new()$deserializeObj(OtherObject$`ResearcherID.Disclaimer`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.Xref_Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Xref_Doi`, "array[character]", loadNamespace("woslite_r_client"))
-      self$`Identifier.Ids` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Ids`, "array[character]", loadNamespace("woslite_r_client"))
+      self$`Identifier.Eissn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Eissn`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Contributor.ResearcherID.ResearcherIDs` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.ResearcherIDs`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Contributor.ResearcherID.Names` <- ApiClient$new()$deserializeObj(OtherObject$`Contributor.ResearcherID.Names`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Doi`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.Issn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Issn`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.article_no` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.article_no`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.Isbn` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Isbn`, "array[character]", loadNamespace("wosliterclient"))
+      self$`ResearcherID.Disclaimer` <- ApiClient$new()$deserializeObj(OtherObject$`ResearcherID.Disclaimer`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.Xref_Doi` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Xref_Doi`, "array[character]", loadNamespace("wosliterclient"))
+      self$`Identifier.Ids` <- ApiClient$new()$deserializeObj(OtherObject$`Identifier.Ids`, "array[character]", loadNamespace("wosliterclient"))
       self
     }
   )
